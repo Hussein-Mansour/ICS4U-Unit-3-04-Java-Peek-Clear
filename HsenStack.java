@@ -35,15 +35,15 @@ public class HsenStack {
         final int size = stack.size();
         if (size == 0) {
             System.out.println("The stack is Empty!");
-        } else {
-            return stack.remove(0);
         }
+        
+        return stack.remove(0);
     }
 
     /**
     * Peek Method.
     *
-    * @return return -1.
+    * @return return top value.
     */
     public Integer peek() {
         final int size = stack.size();
@@ -54,7 +54,7 @@ public class HsenStack {
             System.out.print("The element at the top of the"
                                + " stack is: " + gett);
         }
-        return -1;
+        return gett;
     }
 
     /**
